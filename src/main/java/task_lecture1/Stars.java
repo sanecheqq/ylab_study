@@ -1,4 +1,4 @@
-package tasks;
+package task_lecture1;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Stars {
             for (int j = 0; j < m; ++j) {
                 System.out.print(template + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }

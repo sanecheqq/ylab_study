@@ -1,4 +1,4 @@
-package tasks;
+package task_lecture1;
 
 public class MultTable {
     public static void main(String[] args) {

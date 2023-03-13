@@ -1,4 +1,4 @@
-package tasks;
+package task_lecture1;
 
 import java.util.Random;
 import java.util.Scanner;
