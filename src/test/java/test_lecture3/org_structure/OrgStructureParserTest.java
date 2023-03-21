@@ -16,7 +16,7 @@ public class OrgStructureParserTest {
         OrgStructureParser parser = new OrgStructureParserImpl();
         Employee boss;
         try {
-            boss = parser.parseStructure(new File("data.csv"));
+            boss = parser.parseStructure(new File("src/test/java/test_lecture3/org_structure/data.csv"));
         } catch (IOException e) {
             throw new Error(e);
         }
