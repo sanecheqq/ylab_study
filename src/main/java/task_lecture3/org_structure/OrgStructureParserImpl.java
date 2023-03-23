@@ -8,7 +8,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.util.HashMap;
-import java.util.Random;
+import java.util.Map;
+
+import java.util.TreeMap;
 
 public class OrgStructureParserImpl implements OrgStructureParser {
     private HashMap<String, String> fieldToMethod = new HashMap<>();
@@ -35,10 +37,10 @@ public class OrgStructureParserImpl implements OrgStructureParser {
         Employee mainBoss = new Employee();
         String[] fillingFieldsOrder = splitFieldsOrder(reader);
         checkFillingFieldsOrder(fillingFieldsOrder);
-        String line;
         boolean addingBoss = true;
-        while ((line = reader.readLine()) != null) {
-            String[] employeeValues = splitValues(line);
+        Map<Integer, String[]> employeesData = new TreeMap<>();
+        readFileAndFillData(reader, employeesData);
+        for (String[] employeeValues : employeesData.values()) {
             Employee employee = initEmployee(fillingFieldsOrder, employeeValues);
             if (addingBoss) {
                 mainBoss = employee;
@@ -57,6 +59,15 @@ public class OrgStructureParserImpl implements OrgStructureParser {
     private void checkFillingFieldsOrder(String[] fillingFieldsOrder) {
         if (fillingFieldsOrder == null) {
             throw new NullPointerException("file can not be empty");
+        }
+    }
+
+    private void readFileAndFillData(BufferedReader reader, Map<Integer, String[]> employeesData) throws IOException {
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] employeeValues = splitValues(line);
+            int employeeId = Integer.parseInt(employeeValues[0]);
+            employeesData.put(employeeId, employeeValues);
         }
     }
 
