@@ -1,9 +1,9 @@
 package test_lecture3.org_structure;
 
 import org.junit.Test;
-import task_lecture3.org_structure.Employee;
-import task_lecture3.org_structure.OrgStructureParser;
-import task_lecture3.org_structure.OrgStructureParserImpl;
+import io.ylab.intensive.task_lecture3.org_structure.Employee;
+import io.ylab.intensive.task_lecture3.org_structure.OrgStructureParser;
+import io.ylab.intensive.task_lecture3.org_structure.OrgStructureParserImpl;
 
 import java.io.File;
 import java.io.IOException;

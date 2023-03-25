@@ -1,6 +1,6 @@
 package test_lecture2;
 
-import task_lecture2.rate_limited_printer.RateLimitedPrinter;
+import io.ylab.intensive.task_lecture2.rate_limited_printer.RateLimitedPrinter;
 
 public class FunctionalRateLimitedPrinterTest {
     public static void main(String[] args) {

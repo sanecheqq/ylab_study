@@ -1,7 +1,7 @@
 package test_lecture2;
 
-import task_lecture2.complex_numbers.ComplexNumber;
-import task_lecture2.complex_numbers.ComplexNumberImpl;
+import io.ylab.intensive.task_lecture2.complex_numbers.ComplexNumber;
+import io.ylab.intensive.task_lecture2.complex_numbers.ComplexNumberImpl;
 import org.junit.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

@@ -1,8 +1,8 @@
 package test_lecture3;
 
 import org.junit.Test;
-import task_lecture3.dated_map.DatedMap;
-import task_lecture3.dated_map.DatedMapImpl;
+import io.ylab.intensive.task_lecture3.dated_map.DatedMap;
+import io.ylab.intensive.task_lecture3.dated_map.DatedMapImpl;
 import java.util.Date;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;

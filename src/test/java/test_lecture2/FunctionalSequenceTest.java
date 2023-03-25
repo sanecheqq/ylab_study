@@ -1,8 +1,8 @@
 package test_lecture2;
 
 
-import task_lecture2.sequences.Sequences;
-import task_lecture2.sequences.SequencesImpl;
+import io.ylab.intensive.task_lecture2.sequences.Sequences;
+import io.ylab.intensive.task_lecture2.sequences.SequencesImpl;
 
 public class FunctionalSequenceTest {
     public static void main(String[] args) {

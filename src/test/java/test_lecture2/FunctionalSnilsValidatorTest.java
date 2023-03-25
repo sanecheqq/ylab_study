@@ -1,8 +1,8 @@
 package test_lecture2;
 
 import org.junit.Test;
-import task_lecture2.snils_validator.SnilsValidator;
-import task_lecture2.snils_validator.SnilsValidatorImpl;
+import io.ylab.intensive.task_lecture2.snils_validator.SnilsValidator;
+import io.ylab.intensive.task_lecture2.snils_validator.SnilsValidatorImpl;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

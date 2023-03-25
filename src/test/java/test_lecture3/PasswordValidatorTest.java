@@ -1,7 +1,7 @@
 package test_lecture3;
 
 import org.junit.Test;
-import task_lecture3.password_validator.PasswordValidator;
+import io.ylab.intensive.task_lecture3.password_validator.PasswordValidator;
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
 public class PasswordValidatorTest {

@@ -1,9 +1,9 @@
 package test_lecture3.file_sort;
 
 import org.junit.Test;
-import task_lecture3.file_sort.ExternalMergeSort;
-import task_lecture3.file_sort.Generator;
-import task_lecture3.file_sort.Validator;
+import io.ylab.intensive.task_lecture3.file_sort.ExternalMergeSort;
+import io.ylab.intensive.task_lecture3.file_sort.Generator;
+import io.ylab.intensive.task_lecture3.file_sort.Validator;
 import java.io.File;
 import java.io.IOException;
 

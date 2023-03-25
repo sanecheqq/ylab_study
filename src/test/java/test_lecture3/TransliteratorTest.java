@@ -1,8 +1,8 @@
 package test_lecture3;
 
 import org.junit.Test;
-import task_lecture3.transliterator.Transliterator;
-import task_lecture3.transliterator.TransliteratorImpl;
+import io.ylab.intensive.task_lecture3.transliterator.Transliterator;
+import io.ylab.intensive.task_lecture3.transliterator.TransliteratorImpl;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
