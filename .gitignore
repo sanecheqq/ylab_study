@@ -3,7 +3,6 @@
 resourcesDev
 javaDev
 *.iml
-.idea
 target
 .classpath
 .project
