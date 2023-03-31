@@ -1,8 +1,8 @@
 package test_lecture4.persistent_map_test;
 
-import io.ylab.intensive.lesson04.DbUtil;
-import io.ylab.intensive.lesson04.persistentmap.PersistentMap;
-import io.ylab.intensive.lesson04.persistentmap.PersistentMapImpl;
+import io.ylab.intensive.task_lecture4.DbUtil;
+import io.ylab.intensive.task_lecture4.persistentmap.PersistentMap;
+import io.ylab.intensive.task_lecture4.persistentmap.PersistentMapImpl;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;

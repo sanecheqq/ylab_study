@@ -1,8 +1,8 @@
 package test_lecture4.filesort_test;
 
-import io.ylab.intensive.lesson04.DbUtil;
-import io.ylab.intensive.lesson04.filesort.FileSortImpl;
-import io.ylab.intensive.lesson04.filesort.FileSorter;
+import io.ylab.intensive.task_lecture4.DbUtil;
+import io.ylab.intensive.task_lecture4.filesort.FileSortImpl;
+import io.ylab.intensive.task_lecture4.filesort.FileSorter;
 import io.ylab.intensive.task_lecture3.file_sort.Generator;
 
 import javax.sql.DataSource;

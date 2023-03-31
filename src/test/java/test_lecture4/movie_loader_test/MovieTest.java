@@ -1,8 +1,8 @@
 package test_lecture4.movie_loader_test;
 
-import io.ylab.intensive.lesson04.DbUtil;
-import io.ylab.intensive.lesson04.movie.MovieLoader;
-import io.ylab.intensive.lesson04.movie.MovieLoaderImpl;
+import io.ylab.intensive.task_lecture4.DbUtil;
+import io.ylab.intensive.task_lecture4.movie.MovieLoader;
+import io.ylab.intensive.task_lecture4.movie.MovieLoaderImpl;
 
 import javax.sql.DataSource;
 import java.io.File;
