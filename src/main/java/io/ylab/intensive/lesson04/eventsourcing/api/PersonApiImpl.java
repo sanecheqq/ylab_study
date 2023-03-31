@@ -59,13 +59,7 @@ public class PersonApiImpl implements PersonApi  {
     }
 
     private String queryToDo(Long personId) {
-        String query;
-        if (findPerson(personId) == null) {
-            query = "insert";
-        } else {
-            query = "update";
-        }
-        return query;
+        return findPerson(personId) == null ? "insert" : "update";
     }
 
 
