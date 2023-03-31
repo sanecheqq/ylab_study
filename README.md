@@ -1,6 +1,6 @@
 # ylab_study
 
-Решения в директории src/main/java/
+Решения в директории: <b>src/main/java/io/ylab/intesive/</b>
 
-Тесты: src/test/java/
+Тесты: <b>src/test/java/</b>
 
