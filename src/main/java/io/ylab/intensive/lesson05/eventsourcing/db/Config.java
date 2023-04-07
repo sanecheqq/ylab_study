@@ -15,11 +15,6 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("io.ylab.intensive.lesson05.eventsourcing.db")
 public class Config {
   @Bean
-  public MessageReceiverAndProcessor messageReceiverAndProcessor() throws Exception{
-    return new MessageReceiverAndProcessor(connectionFactory(), "default");
-  }
-
-  @Bean
   public DataSource dataSource() throws SQLException {
     PGSimpleDataSource dataSource = new PGSimpleDataSource();
     dataSource.setServerName("localhost");

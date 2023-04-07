@@ -17,12 +17,6 @@ import java.util.concurrent.TimeoutException;
 @ComponentScan("io.ylab.intensive.lesson05.eventsourcing.api")
 public class Config {
   @Bean
-  public MessageSender messageSender() throws Exception {
-    return new MessageSender(connectionFactory(), "default");
-  }
-
-
-  @Bean
   public DataSource dataSource() {
     PGSimpleDataSource dataSource = new PGSimpleDataSource();
     dataSource.setServerName("localhost");

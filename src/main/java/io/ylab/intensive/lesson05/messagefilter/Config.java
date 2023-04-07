@@ -12,11 +12,6 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan("io.ylab.intensive.lesson05.messagefilter")
 public class Config {
   @Bean
-  public MessageProcessor messageProcessor() throws Exception {
-    return new MessageProcessor(connectionFactory(), "input", "output");
-  }
-
-  @Bean
   public ConnectionFactory connectionFactory() {
     ConnectionFactory connectionFactory = new ConnectionFactory();
     connectionFactory.setHost("localhost");

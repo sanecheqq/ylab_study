@@ -16,13 +16,12 @@ import java.util.concurrent.TimeoutException;
 public class MessageSender {
     private final Connection connection;
     private final Channel channel;
-    private final String queueName;
+    private static final String queueName = "default";
 
     @Autowired
-    public MessageSender(ConnectionFactory connectionFactory, String queueName) throws IOException, TimeoutException {
+    public MessageSender(ConnectionFactory connectionFactory) throws IOException, TimeoutException {
         this.connection = connectionFactory.newConnection();
         this.channel = connection.createChannel();
-        this.queueName = queueName;
         channel.queueDeclare(queueName, false, false, false, null);
     }
 

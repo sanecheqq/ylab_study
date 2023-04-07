@@ -17,16 +17,14 @@ import java.util.concurrent.TimeoutException;
 public class MessageProcessor {
     private final Connection connection;
     private final Channel channel;
-    private final String queueInput;
-    private final String queueOutput;
+    private static final String queueInput = "input";
+    private static final String queueOutput = "output";
     private DbController dbController;
 
     @Autowired
-    public MessageProcessor (ConnectionFactory connectionFactory, String queueInput, String queueOutput) throws IOException, TimeoutException {
+    public MessageProcessor (ConnectionFactory connectionFactory) throws IOException, TimeoutException {
         this.connection = connectionFactory.newConnection();
         this.channel = connection.createChannel();
-        this.queueInput = queueInput;
-        this.queueOutput = queueOutput;
         channel.queueDeclare(queueInput, false, false, false, null);
         channel.queueDeclare(queueOutput, false, false, false, null);
     }

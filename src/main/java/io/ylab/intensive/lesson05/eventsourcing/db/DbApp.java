@@ -7,7 +7,7 @@ public class DbApp {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
         applicationContext.start();
 
-        MessageReceiverAndProcessor messageReceiverAndProcessor = applicationContext.getBean(MessageReceiverAndProcessor.class);
+        MessageReceiverAndProcessor messageReceiverAndProcessor = applicationContext.getBean("messageReceiverAndProcessor", MessageReceiverAndProcessor.class);
         messageReceiverAndProcessor.waitForMessagesAndProcessIt();
     }
 }

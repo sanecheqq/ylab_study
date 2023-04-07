@@ -19,13 +19,12 @@ public class MessageReceiverAndProcessor {
     private final Connection connection;
     private final Channel channel;
     private DbController dbController;
-    private final String queueName;
+    private static final String queueName = "default";
 
     @Autowired
-    public MessageReceiverAndProcessor(ConnectionFactory connectionFactory, String queueName) throws IOException, TimeoutException {
+    public MessageReceiverAndProcessor(ConnectionFactory connectionFactory) throws IOException, TimeoutException {
         this.connection = connectionFactory.newConnection();
         this.channel = connection.createChannel();
-        this.queueName = queueName;
         channel.queueDeclare(queueName, false, false, false, null);
     }
 
