@@ -1,10 +1,10 @@
-package io.ylab.intensive.lesson05.eventsourcing.db;
+package io.ylab.intensive.task_lecture5.eventsourcing.db;
 
 import java.sql.SQLException;
 import javax.sql.DataSource;
 
 import com.rabbitmq.client.ConnectionFactory;
-import io.ylab.intensive.lesson05.DbUtil;
+import io.ylab.intensive.task_lecture5.DbUtil;
 import org.postgresql.ds.PGSimpleDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
-@ComponentScan("io.ylab.intensive.lesson05.eventsourcing.db")
+@ComponentScan("io.ylab.intensive.task_lecture5.eventsourcing.db")
 public class Config {
   @Bean
   public DataSource dataSource() throws SQLException {

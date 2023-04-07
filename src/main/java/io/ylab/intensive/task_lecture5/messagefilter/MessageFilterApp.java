@@ -1,4 +1,4 @@
-package io.ylab.intensive.lesson05.messagefilter;
+package io.ylab.intensive.task_lecture5.messagefilter;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

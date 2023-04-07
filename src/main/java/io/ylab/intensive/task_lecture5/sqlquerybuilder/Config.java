@@ -1,4 +1,4 @@
-package io.ylab.intensive.lesson05.sqlquerybuilder;
+package io.ylab.intensive.task_lecture5.sqlquerybuilder;
 
 import javax.sql.DataSource;
 
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("io.ylab.intensive.lesson05.sqlquerybuilder")
+@ComponentScan("io.ylab.intensive.task_lecture5.sqlquerybuilder")
 public class Config {
     @Bean
     public DataSource dataSource() {

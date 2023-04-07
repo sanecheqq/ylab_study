@@ -1,7 +1,7 @@
-package io.ylab.intensive.lesson05.eventsourcing.api;
+package io.ylab.intensive.task_lecture5.eventsourcing.api;
 
 
-import io.ylab.intensive.lesson05.eventsourcing.Person;
+import io.ylab.intensive.task_lecture5.eventsourcing.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

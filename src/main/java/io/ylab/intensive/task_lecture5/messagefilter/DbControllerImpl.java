@@ -1,6 +1,6 @@
-package io.ylab.intensive.lesson05.messagefilter;
+package io.ylab.intensive.task_lecture5.messagefilter;
 
-import io.ylab.intensive.lesson05.DbUtil;
+import io.ylab.intensive.task_lecture5.DbUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

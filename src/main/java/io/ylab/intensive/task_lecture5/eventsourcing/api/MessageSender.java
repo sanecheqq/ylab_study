@@ -1,4 +1,4 @@
-package io.ylab.intensive.lesson05.eventsourcing.api;
+package io.ylab.intensive.task_lecture5.eventsourcing.api;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.ConnectionFactory;

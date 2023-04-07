@@ -1,4 +1,4 @@
-package io.ylab.intensive.lesson05.eventsourcing.db;
+package io.ylab.intensive.task_lecture5.eventsourcing.db;
 
 import java.sql.SQLException;
 

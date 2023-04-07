@@ -1,4 +1,4 @@
-package io.ylab.intensive.lesson05.sqlquerybuilder;
+package io.ylab.intensive.task_lecture5.sqlquerybuilder;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

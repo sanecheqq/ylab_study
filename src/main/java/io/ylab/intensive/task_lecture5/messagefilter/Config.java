@@ -1,4 +1,4 @@
-package io.ylab.intensive.lesson05.messagefilter;
+package io.ylab.intensive.task_lecture5.messagefilter;
 
 import javax.sql.DataSource;
 
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("io.ylab.intensive.lesson05.messagefilter")
+@ComponentScan("io.ylab.intensive.task_lecture5.messagefilter")
 public class Config {
   @Bean
   public ConnectionFactory connectionFactory() {
